@@ -19,7 +19,7 @@ class Donate extends CI_Controller {
 	}
 	public function index()
 	{	
-		//$this->load->view('calvinkrishna1');	
+		$this->load->view('calvinkrishna1');	
 	}	
 
 	public function donasi($id){
@@ -122,7 +122,7 @@ class Donate extends CI_Controller {
 		      	//echo 'Email send.';
 
 				$this->m_donate->insertData($donate);
-				redirect('Donate/donasi/'.$donate['id_project_yg_dipilih'],'refresh');
+				//redirect('Donate/donasi/'.$donate['id_project_yg_dipilih'],'refresh');
 		     }
 		     else
 		    {
